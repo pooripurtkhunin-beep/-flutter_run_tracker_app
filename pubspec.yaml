@@ -1,0 +1,44 @@
+name: flutter_run_tracker_app
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^8.2.1 #ใช้ fonts จาก fonts google.com
+  font_awesome_flutter: ^11.0.0 #ใช้ icon จาก fontawesome.com
+  supabase_flutter: ^2.18.3 #ใช้ supabase ในการเชื่อมต่อกับ database, storage
+  image_picker: ^1.2.3 #ใช้ ในการเลือกภาพจาก gallery หรือ camera
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4 #ใช้ สร้าง icon สำหรับ launcher และ app
+  flutter_lints: ^6.0.0
+
+
+flutter_launcher_icons:
+  image_path: "assets/icon/icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon/
+
+ 
